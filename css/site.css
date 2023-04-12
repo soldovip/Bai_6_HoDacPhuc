@@ -217,7 +217,8 @@ font-family: normal;
  right: 130px;
  
     text-align: center;
-    font-size:13px;
+      font-size:12px;
+    line-height: 21px;
     margin-top: 84px;
     font-family: sans-serif;
 }
