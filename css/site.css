@@ -53,11 +53,12 @@ margin-top: 445px;
     flex-direction: row;
     width: 1000px;
     height: 250.2px;
-    
+  position: relative;
+  right:97.2px ;
 }
 .longden{
     position: relative;
-    left:35px;
+    left:28.8px;
 }
 .mid >div form{
    
@@ -108,7 +109,7 @@ height: 250px;
     flex-direction: row;
    gap: 5px;
    width: 986px;
-margin-left: 105px;
+margin-right: 90px;
 }
 .under1 {
     display: flex;
@@ -182,6 +183,9 @@ position: relative;
 left: 435px;
 font-size: 12px;
 font-family: normal;
+}
+.xemthem a:hover{
+    cursor: pointer;
 }
 .under2{
     display: flex;
