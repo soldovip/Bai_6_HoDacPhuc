@@ -2,398 +2,226 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+   
 }
 
 body {
     min-height: 1300px;
-    /* background-image: url(../images/bg-top.jpg), url(../images/bg-bottom.jpg); */ 
     background-image: url(../images/bg-top.jpg);
     background-repeat: no-repeat, no-repeat;
     background-position: top center, bottom center;
     background-color: #f2f2f2;
     font-family: Cambria;
     font-size: 13px;
+    
 }
-
+.all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .header {
-    width: 1000px;
+    width: 800px;
     height: 60px;
-    margin: auto;
+   margin-right: 70px;
     color: #fff;
     gap: 10px;
-    padding: 23px ;
-    padding-left: 50px;
+   justify-content: center;
+   align-items: center;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
 }
 
 .header a {
     color:#fff;
     text-decoration: none;
+    
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-a:hover {
+.header >div a:hover ,.xemthem a:hover {
     opacity: 0.8;
 }
-
-#menu {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-}
-
-#menu>li {
-    border-left: 1px solid rgba(255, 255, 255, 0.6);
-    width: 100px;
-    text-align: center;
-}
-
-#menu>li:first-child {
-    padding-left: 0;
-    border-left: none;
-}
-
-#menu>li:last-child {
-    padding-right: 0;
-}
-
-#logo-space {
-    width: 200px !important;
-}
-
-.container {
-    position: relative;
-    width: 980px;
-    margin: auto;
-    top: 500px;
-}
-
-#long-den {
-    position: absolute;
-    top: 0;
-    left: -80px;
-    z-index: 999;
-}
-
-.section-1 {
-    display: grid;
-    grid-template-columns: 240px 490px 254px;
-    column-gap: 8px;
-    row-gap: 2px;
-    background-color: #112141;
-    border:2px solid #112141;
-}
-
-.left-buttons a {
-    display: block;
-    width: 100%;
-}
-
-#tai-game {
-    background-image: url(../images/btn_taigame.jpg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    height: 128px;
-}
-
-#tai-game:hover {
-    opacity: 0.8;
-}
-
-#dang-ky,
-#nap-the {
-    background-image: url(../images/buttons-left.png);
-    height: 62px;
-}
-
-#dang-ky {
-    background-position: 0 -3px;
-}
-
-#dang-ky:hover {
-    background-position: -248px -3px;
-}
-
-#nap-the {
-    background-position: 0 -66px;
-}
-
-#nap-the:hover {
-    background-position: -248px -66px;
-}
-
-.slider img {
-    width:100%;
-    /* height:100%; */
-}
-.right-buttons {
-    display: grid;
-    grid-template-columns: 113px 135px;
-    grid-template-rows: 103px 103px 32px;
-    column-gap:4px;
-    row-gap:6px;
-    padding: 0;
-}
-#giang-ho,
-#ho-tro,
-#nap-vang,
-#nap-vip {
-    background-image: url(../images/buttons-right.png);    
-    background-repeat: no-repeat;
-}
-#giang-ho {
-    background-position: 0 -7px;
-}
-#ho-tro {
-    background-position: -118px -7px;
-}
-#nap-vang {
-    background-position: 0 -118px;
-}
-#nap-vip {
-    background-position: -118px -118px;
-}
-#hotline {
-    grid-column: 1/3;
-    background-image: url(../images/hotline.png);
-}
-.container .tool1 ul{
+.mid{
+margin-top: 445px;
     display: flex;
     flex-direction: row;
-    list-style: none;
-    text-align: center;
-    gap: 20px;
-    padding: 21px;
-    padding-left: 40px;
-    position: relative;
-    bottom: 495px;
-    color: rgb(216, 213, 213);
-    word-spacing: 9px;
-    cursor: pointer;
+    width: 1000px;
+    height: 250.2px;
+    
 }
-.container .tool2 ul{
-    display: flex;
-    flex-direction: row-reverse;
-    list-style: none;
-    text-align: center;
-    gap: 20px;
-    padding: 21px;
-    padding-right: 75px;
+.longden{
     position: relative;
-    bottom: 552px;
-    color: rgb(216, 213, 213);
-    word-spacing: 9px;
-    cursor: pointer;
+    left:35px;
 }
-.container .img{
+.mid >div form{
+   
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color:rgb(5, 3, 36);
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    position: relative;
-    bottom: 100px;
+  height: 250px;
+width: 246px;
+
 }
-.container .img .img1{
-    position: relative;
-    bottom: 70px;
-    padding-left:2px;
+#tai-game{
+    object-fit: cover; 
+    width: 98.1%;
+    border-top: 2px solid rgb(26,42,72);
+border-bottom: 2px solid rgb(26,42,72);
 }
-.container .img .img2{
+#dang-ky{
     position: relative;
-    padding-left: 10px;
+    right: 7px;
+    width: 253px; height: 122px; 
+    object-fit: none;
+    object-position: 14px;
+   margin-bottom: 2px;
+    
 }
-.container .img .img3{
-    position: relative;
-    bottom: 30px;
-    padding-left: 10px;
+#thang-3{
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    border-top:3px solid rgb(26,42,72);
+    border-bottom:2px solid rgb(26,42,72);
+    border-right: 7px;
+    border-left: 4px solid rgb(26,42,72);
+    
+height: 250px;
 }
-.container .img .img4{
-    position: relative;
-    top:110px;
-    right: 250px;
-}
-.container .img .img6{
-    position: relative;
-    bottom: 15px;
-    right: 1300px;
-}
-.container .img .img7{
-    position: relative;
-    top: 190px;
-    right: 1335px;
-}
-.container .img .img8{
-    position: relative;
-    top: 292px;
-    right: 1330px;
-    border: 4px solid rgb(5, 4, 73);
+
+.mid3{
+    background-color: rgb(26,42,72);
+        width: 241px;
+        border-left: 12px solid rgb(26,42,72);
+border-right: 2px solid rgb(26,42,72);
+height: 250px;
 }
 .under{
-    width: 730px; 
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+   gap: 5px;
+   width: 986px;
+margin-left: 105px;
 }
-.under .under1{
-    position: relative;
-    right: 5px;
-
+.under1 {
+    display: flex;
+    flex-direction: column;
+    gap:10x;
+    margin-left: 47px;
 }
-.container .under .tool3 ul{
+.title{
+    background-image:url(../images/news-header-bg.png) ;
+    height: 64.3px;
+}
+.title ul{
+padding-top:29px ;
+padding-left: 23px;    
     display: flex;
     flex-direction: row;
     list-style: none;
-    color: rgb(247, 240, 240);
-    position: relative;
-    bottom: 45px;
-    padding-left: 20px;
-    font-size: 18px;
-    cursor: pointer;
+    gap:40px;
+    font-family: sans-serif;
+    color:rgb(226, 174, 111);
+    font-weight: bold;
 }
-.container .under .tool4 ul{
+.tin{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap:0px;
+    border-left:5px solid rgb(26,42,72) ;
+    border-bottom: 5px solid rgb(26,42,72);
+    border-right:5px solid rgb(26,42,72);
+    width: 655px;
+
+}
+.tin >div{
     display: flex;
     flex-direction: row;
-    list-style: none;
-    position: relative;
-    bottom: 64px;
-    padding-left: 115px;
-    word-spacing: 14px;
-    color: rgba(222, 184, 135);
-    font-size: 15px;
-    cursor: pointer;
+    gap:20px;
+    padding-top: 10px;
+    padding-left: 10px;
 }
-.container .under .img9{
-    position: relative;
-    bottom: 20px;
-    left: 20px;
+.timer{
+    font-size: 13px;
+    color:lightslategray;
+    font-style: italic;
 }
-.img9 >img{
-    border: 6px solid burlywood;
+.des{
+color: rgb(100, 99, 99);
+font-size: 15px;   
+font-weight: normal;
 }
-.container .under .img9 .news1{
-    color: rgb(184, 16, 16);
-    font-size: 20px;
-    position: relative;
-    bottom: 130px;
-    padding-left: 175px;
-    
+ .tin >div >div p:first-child {
+   padding-left: 10px;
+    color: rgb(196, 22, 39);
+    border-left: 5px solid rgb(196, 22, 39);
+font-size: 18.4px;
+font-weight:bolder;
 }
-.container .under .img9 .news1a{
-    color: rgb(122, 119, 119);
-    position: relative;
-    bottom: 122px;
-    padding-left: 175px
+.tin >div img{
+    border: 6px solid rgb(182,155,116);
 }
-.container .under .img9 .news1b{
-    color: rgb(87, 85, 85);
-    position: relative;
-    bottom: 115px;
-    padding-left: 175px;
+.tin >div >div{
+width: 399px;
 }
-.img-bt{
-    height: 1000px;
-    background: url(../images/bg-bottom.jpg) center / cover no-repeat;
-    
+.xemthem a{
+    background-color: rgb(26,42,72);
+    color: gray;
+    border: 3px solid gray;
+    padding: 10px;
+    margin-bottom:24px ;
+position: relative;
+left: 435px;
+font-size: 12px;
+font-family: normal;
 }
-.container .under .img10{
-    position: relative;
-    bottom: 80px;
-    left:20px;
-    
-}
-.img10 >img{
-    border: 6px solid burlywood;
-}
-.container .under .img10 .news2{
-    color: rgb(184, 16, 16);
-    font-size: 20px;
-    position: relative;
-    bottom: 128px;
-    padding-left: 175px;
-}
-.container .under .img10 .news2a{
-    color: rgb(122, 119, 119);
-    position: relative;
-    bottom: 118px;
-    padding-left: 175px;
-}
-.container .under .img10 .news2b{
-    color: rgb(87, 85, 85);
-    position: relative;
-    bottom: 110px;
-    padding-left: 175px;
-}
-.container .under .img11{
-    position: relative;
-    bottom: 140px;
-    left: 20px;
-}
-.img11 >img{
-    border: 6px solid burlywood;
-}
-.container .under .img11 .news3{
-    color: rgb(184, 16, 16);
-    font-size: 20px;
-    position: relative;
-    bottom: 138px;
-    padding-left: 175px;
-}
-.container .under .img11 .news3a{
-    color: rgb(122, 119, 119);
-    position: relative;
-    bottom: 130px;
-    padding-left: 175px;
-}
-.container .under .img11 .news3b{
-    color: rgb(87, 85, 85);
-    position: relative;
-    bottom: 120px;
-    padding-left: 175px;
-}
-.container .under{
-    border: 5px solid rgb(5, 4, 73);
-}
-.container .img5{
-    position: relative;
-    bottom: 985px;
-    left: 2px;
-}
-.container .button .btn{
-    position: relative;
-    bottom: 220px;
-    left: 450px;
-    font-size: 20px;
-    color: #6b6d70;
-    word-spacing: 2px;
-    background-color: #112141;
-    cursor: pointer;
-    width: 120px;
-    height: 45px;
-    margin: 5px;
-    border: 4px solid rgb(155, 148, 148);
-}
-.outside .img{
-    position: relative;
-    top: 1200px;
+.under2{
+    display: flex;
+    flex-direction: column;
 }
 
-.container .text1 ul{
-    align-items: center;
-    list-style: none;
-    margin-left: 20px;
-    position: relative;
-    bottom:35px;
-    font-size: 17px;
+.under2 img{
+    border: 4px solid rgb(26,42,72);
 }
-.img9 .news1 >b{
-    border-left: 6px solid rgb(184,16,16);
+.quangcao img{
+    width: 655px;
 }
-.img10 .news2 >b{
-    border-left: 6px solid rgb(184,16,16);
+.end{
+    background-image: url(../images/bg-bottom.jpg);
+   width: 1865px;
+   height: 245px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 100px;
+ 
+    justify-content: center;
+   
 }
-.img11 .news3 >b{
-    border-left: 6px solid rgb(184,16,16);
+
+.end p{
+ position: relative;
+ left: 10px;
+    font-weight: bolder;
+    text-align: center;
+    font-size:13px;
+    margin-top: 84px;
 }
-
-
-
-
-
-
+.end img{
+    object-fit: none;
+    width: 140px;
+    height: 40px; 
+ position: relative;
+ right: 33.5px;
+ margin-top: 84px;
+}
