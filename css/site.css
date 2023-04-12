@@ -7,7 +7,7 @@
 
 body {
     min-height: 1300px;
-    background-image: url(./images/bg-top.jpg);
+    background-image: url(../images/bg-top.jpg);
     background-repeat: no-repeat, no-repeat;
     background-position: top center, bottom center;
     background-color: #f2f2f2;
@@ -118,7 +118,7 @@ margin-left: 105px;
     margin-left: 47px;
 }
 .title{
-    background-image:url(./images/news-header-bg.png) ;
+    background-image:url(../images/news-header-bg.png) ;
     height: 64.3px;
 }
 .title ul{
@@ -196,7 +196,7 @@ font-family: normal;
     width: 655px;
 }
 .end{
-    background-image: url(./images/bg-bottom.jpg);
+    background-image: url(../images/bg-bottom.jpg);
    width: 1865px;
    height: 245px;
     display: flex;
